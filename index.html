@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Waleed - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #000;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px 50px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            color: #000;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Titles */
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* Professional Summary */
+        .summary {
+            font-size: 11px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        /* Experience */
+        .experience-item {
+            margin-bottom: 12px;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-title {
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .job-date {
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .company-name {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .experience-item ul {
+            margin-left: 20px;
+            font-size: 11px;
+        }
+
+        .experience-item li {
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+
+        /* Education */
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .degree {
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .education-details {
+            font-size: 12px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 11px;
+        }
+
+        .skill-item {
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            padding: 4px 10px;
+            border-radius: 3px;
+        }
+
+        /* Links */
+        .links {
+            font-size: 11px;
+        }
+
+        .links a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Achievements */
+        .achievement-item {
+            margin-bottom: 8px;
+        }
+
+        .achievement-title {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .achievement-item ul {
+            margin-left: 20px;
+            font-size: 11px;
+        }
+
+        .achievement-item li {
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+                padding: 20px 30px;
+            }
+        }
+
+        @page {
+            margin: 0.5in;
+            size: letter;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Muhammad Waleed</h1>
+            <div class="contact-info">
+                <a href="mailto:muhammadwaleed6824@gmail.com">muhammadwaleed6824@gmail.com</a> • 
+                <a href="tel:+923064470384">+92 306 4470384</a> • 
+                <a href="https://github.com/MuhammadWaleed-Animations" target="_blank">GitHub</a> • 
+                <a href="https://linkedin.com/in/muhammad-waleed--" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary">
+                Passionate Computer Science undergraduate at FAST NUCES with a strong foundation in AI integrations, backend development, and full-stack engineering. I excel at building intelligent, scalable systems that bridge AI and real-world applications. My focus is on solving complex problems, experimenting with emerging technologies, and delivering impactful, production-ready software through innovation and teamwork.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div>
+                    <div class="degree">Bachelor of Computer Science</div>
+                    <div class="education-details">FAST NUCES • CGPA 3.85</div>
+                </div>
+                <div class="job-date">Aug 2022 - Jul 2026</div>
+            </div>
+        </section>
+
+        <!-- Employment History -->
+        <section class="section">
+            <h2 class="section-title">Employment History</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Full Stack AI Engineer</div>
+                    <div class="job-date">Jun 2025 - Aug 2025</div>
+                </div>
+                <div class="company-name">Core Edge Solutions & E3 Group</div>
+                <ul>
+                    <li>Developed and deployed AI-driven web platforms using FastAPI, Next.js, Retell AI, Supabase, and Twilio.</li>
+                    <li>Delivered <a href="https://tryportineria.com" target="_blank">tryPortineria.com</a>, an AI concierge product worth millions of dollars.</li>
+                    <li>Worked directly with clients and collaborated with global teams from Stanford, MIT, IIT, and Cambridge.</li>
+                    <li>Designed AI agent workflows and backend APIs, ensuring robust deployment and scaling.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Full Stack Software Engineering Intern</div>
+                    <div class="job-date">Jun 2025 - Aug 2025</div>
+                </div>
+                <div class="company-name">Folio3</div>
+                <ul>
+                    <li>Built SnapVault, a React Native + FastAPI + Supabase project, enabling secure face-recognition-based photo sharing for events.</li>
+                    <li>Gained end-to-end exposure to the software development lifecycle (SDLC).</li>
+                    <li>Won the Folio3 internship competition for innovative frontend, backend and AI integration.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Android & Full Stack Intern</div>
+                    <div class="job-date">Jun 2024 - Aug 2024</div>
+                </div>
+                <div class="company-name">Analyzinn Solutions</div>
+                <ul>
+                    <li>Delivered live applications and APIs using Android Studio, Node.js, and MERN Stack, used daily by thousands of users.</li>
+                    <li>Led the team in building scalable backend systems and integrations.</li>
+                    <li>Used Postman, Git, and Figma for testing and collaboration.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">FastAPI</span>
+                <span class="skill-item">Flask</span>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">MERN Stack</span>
+                <span class="skill-item">Next.js</span>
+                <span class="skill-item">Supabase</span>
+                <span class="skill-item">Android Development</span>
+                <span class="skill-item">Docker</span>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">Vercel</span>
+                <span class="skill-item">Linux</span>
+                <span class="skill-item">OpenAI API</span>
+                <span class="skill-item">Retell AI</span>
+                <span class="skill-item">Vapi</span>
+                <span class="skill-item">Twilio</span>
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="section">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            
+            <div class="achievement-item">
+                <div class="achievement-title">Academic Honors</div>
+                <ul>
+                    <li>Rector's List: Fall 2023 (4.00 GPA, Gold Medalist)</li>
+                    <li>Dean's List: Fall 2022 | Spring 2023 | Spring 2024 (Silver Medalist) | Fall 2024 | Spring 2025 (Silver Medalist)</li>
+                    <li>ICPC Online Preliminaries 2024 (Silver Medal)</li>
+                </ul>
+            </div>
+
+            <div class="achievement-item">
+                <div class="achievement-title">Certifications</div>
+                <ul>
+                    <li>AI Agents in LangGraph — DeepLearning.AI (Oct 2025)</li>
+                    <li>AI For Everyone — DeepLearning.AI (Oct 2025) • Credential ID: ZSI6QJAI688H</li>
+                    <li>Foundations of Cybersecurity — Google (Oct 2025) • Credential ID: YZAR82T4OTM4</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
