@@ -135,18 +135,43 @@
         }
 
         /* Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 10px;
+        }
+
+        .skill-category-title {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #333;
+        }
+
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            font-size: 11px;
+            gap: 6px;
+            font-size: 10px;
         }
 
         .skill-item {
-            background-color: #f0f0f0;
-            border: 1px solid #000;
-            padding: 4px 10px;
-            border-radius: 3px;
+            background-color: #f5f5f5;
+            border: 1px solid #333;
+            padding: 3px 8px;
+            border-radius: 2px;
+            font-size: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .skill-item:hover {
+            background-color: #e0e0e0;
+            border-color: #000;
         }
 
         /* Links */
@@ -185,6 +210,141 @@
             line-height: 1.4;
         }
 
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .contact-info {
+                font-size: 11px;
+                line-height: 1.8;
+            }
+
+            .contact-info a {
+                margin: 0 5px;
+                display: inline-block;
+            }
+
+            .section-title {
+                font-size: 14px;
+            }
+
+            .summary {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            .job-title {
+                font-size: 12px;
+            }
+
+            .job-date {
+                font-size: 10px;
+            }
+
+            .company-name {
+                font-size: 11px;
+            }
+
+            .experience-item ul {
+                margin-left: 15px;
+                font-size: 11px;
+            }
+
+            .education-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+            }
+
+            .degree {
+                font-size: 12px;
+            }
+
+            .education-details {
+                font-size: 11px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .skill-category-title {
+                font-size: 11px;
+            }
+
+            .skills-grid {
+                gap: 5px;
+                font-size: 9px;
+            }
+
+            .skill-item {
+                padding: 3px 7px;
+                font-size: 9px;
+            }
+
+            .achievement-title {
+                font-size: 11px;
+            }
+
+            .achievement-item ul {
+                margin-left: 15px;
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .contact-info {
+                font-size: 10px;
+            }
+
+            .contact-info a {
+                margin: 2px 3px;
+            }
+
+            .section-title {
+                font-size: 13px;
+            }
+
+            .summary {
+                font-size: 11px;
+            }
+
+            .job-title {
+                font-size: 11px;
+            }
+
+            .company-name {
+                font-size: 10px;
+            }
+
+            .experience-item ul,
+            .achievement-item ul {
+                font-size: 10px;
+            }
+        }
+
         /* Print Styles */
         @media print {
             body {
@@ -193,6 +353,13 @@
             .container {
                 max-width: 100%;
                 padding: 20px 30px;
+            }
+            .skills-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .skill-category {
+                page-break-inside: avoid;
             }
         }
 
@@ -283,23 +450,71 @@
         <!-- Skills -->
         <section class="section">
             <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <span class="skill-item">Python</span>
-                <span class="skill-item">FastAPI</span>
-                <span class="skill-item">Flask</span>
-                <span class="skill-item">Node.js</span>
-                <span class="skill-item">MERN Stack</span>
-                <span class="skill-item">Next.js</span>
-                <span class="skill-item">Supabase</span>
-                <span class="skill-item">Android Development</span>
-                <span class="skill-item">Docker</span>
-                <span class="skill-item">Git</span>
-                <span class="skill-item">Vercel</span>
-                <span class="skill-item">Linux</span>
-                <span class="skill-item">OpenAI API</span>
-                <span class="skill-item">Retell AI</span>
-                <span class="skill-item">Vapi</span>
-                <span class="skill-item">Twilio</span>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="skill-category-title">Languages & Core</div>
+                    <div class="skills-grid">
+                        <span class="skill-item">C & C++</span>
+                        <span class="skill-item">ASM</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Backend Frameworks</div>
+                    <div class="skills-grid">
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Frontend & Mobile</div>
+                    <div class="skills-grid">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Next.js</span>
+                        <span class="skill-item">React Native</span>
+                        <span class="skill-item">Android Development</span>
+                        <span class="skill-item">TailwindCSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">AI & Integrations</div>
+                    <div class="skills-grid">
+                        <span class="skill-item">OpenAI API</span>
+                        <span class="skill-item">Retell AI</span>
+                        <span class="skill-item">Vapi</span>
+                        <span class="skill-item">LangGraph</span>
+                        <span class="skill-item">Twilio</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Databases & Cloud</div>
+                    <div class="skills-grid">
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">Supabase</span>
+                        <span class="skill-item">Vercel</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Tools & DevOps</div>
+                    <div class="skills-grid">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">Figma</span>
+                    </div>
+                </div>
             </div>
         </section>
 
